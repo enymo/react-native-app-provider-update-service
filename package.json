@@ -1,0 +1,36 @@
+{
+  "name": "@enymo/react-native-app-provider-update-service",
+  "version": "0.0.0",
+  "description": "Update service for react-app-provider for use with react native",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "tsup": {
+    "entry": [
+      "src/js/index.ts"
+    ],
+    "format": [
+      "esm",
+      "cjs"
+    ],
+    "dts": true
+  },
+  "scripts": {
+    "build": "tsup"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/enymo/react-native-app-provider-update-service.git"
+  },
+  "author": "enymo GmbH",
+  "license": "MIT",
+  "devDependencies": {
+    "postcss": "^8.4.17",
+    "tsup": "^6.2.2",
+    "typescript": "^4.7.4"
+  },
+  "peerDependencies": {
+    "react-native": "^0.72.6",
+    "sp-react-native-in-app-updates": "^1.3.1"
+  }
+}
